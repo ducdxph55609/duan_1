@@ -5,7 +5,7 @@ require_once './commons/env.php'; // Khai báo biến môi trường
 require_once './commons/function.php'; // Hàm hỗ trợ
 
 
-// thư viện php mailer
+// thư viện php mailer 
 require_once 'views/assets/PHPMailer-master/PHPMailer-master/src/Exception.php';
 require_once 'views/assets/PHPMailer-master/PHPMailer-master/src/PHPMailer.php';
 require_once 'views/assets/PHPMailer-master/PHPMailer-master/src/SMTP.php';
@@ -64,7 +64,7 @@ match ($act) {
     'da-dat-hang' => (new GioHangDonHangController())->daDatHang(),
     "cap-nhat-gio-hang" => (new GioHangDonHangController())->capNhatGioHang(),
 
-    
+    // Dang ki dang nhap
     'login' => (new TaiKhoanController())->formLogin(),
     'check-login' => (new TaiKhoanController())->postlogin(),
     'logout' => (new TaiKhoanController())->logout(),
